@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fire_aspect_torch",
+  "version": "${version}",
+  "name": "fire_aspect_torch",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fire_aspect_torch/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "random.nari.fire_aspect_torch.Main"
+    ]
+  },
+  "mixins": [
+    "fire_aspect_torch.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "~26.1",
+    "fabric-api": "*"
+  }
+}
