@@ -5,7 +5,7 @@ public abstract class PlayerMixin{
     if (entity instanceof LivingEntity)
         if (attackingItemStack=Items.TORCH)
         {
-
+        onFire(entity) = true;
         }
 
     }
