@@ -6,7 +6,7 @@ public abstract class PlayerMixin{
         ItemStack attackingItemStack = this.getWeaponItem();
         if (attackingItemStack==Items.TORCH)
         {
-            entity.setOnFireFor(5);
+            entity.igniteForSeconds(4);
         }
 
     }
