@@ -1,11 +1,10 @@
 @Mixin(Player.class)
 public abstract class PlayerMixin{
 @Inject(method = "attack", at = @At("TAIL"))
-    public void fire_aspect_torch(Entity entity, CallbackInfo ci){
-    if (entity instanceof LivingEntity)
+    public void fire_aspect_torch(Entity entity, CallbackInfo ci) {
+    if (entity instanceof LivingEntity) {
         ItemStack attackingItemStack = this.getWeaponItem();
-        if (attackingItemStack==Items.TORCH)
-        {
+        if (attackingItemStack == Items.TORCH) {
             entity.igniteForSeconds(4);
         }
 
