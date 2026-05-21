@@ -24,7 +24,7 @@ public abstract class PlayerMixin{
             entity.igniteForSeconds(4);
         }
         if (attackingItemStack.is(Items.SOUL_TORCH)) {
-            entity.igniteForSeconds(4);
+            entity.igniteForSeconds(8);
         }
         if (attackingItemStack.is(Items.COPPER_TORCH)) {
             entity.igniteForSeconds(4);
