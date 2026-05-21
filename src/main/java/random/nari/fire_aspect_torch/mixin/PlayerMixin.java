@@ -1,5 +1,8 @@
+package random.nari.fire_aspect_torch.mixin;
+
 @Mixin(Player.class)
 public abstract class PlayerMixin{
+
     @Shadow public abstract ItemStack getWeaponItem();
     @Inject(method = "attack", at = @At("TAIL"))
     public void fire_aspect_torch(Entity entity, CallbackInfo ci) {
@@ -13,4 +16,4 @@ public abstract class PlayerMixin{
         }
 
     }
-}
+}}

@@ -2,7 +2,9 @@
   "required": true,
   "package": "random.nari.fire_aspect_torch.mixin",
   "compatibilityLevel": "JAVA_25",
-  "mixins": [],
+  "mixins": [
+  "PlayerMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
