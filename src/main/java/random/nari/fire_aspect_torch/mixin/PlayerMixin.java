@@ -26,5 +26,11 @@ public abstract class PlayerMixin{
         if (attackingItemStack.is(Items.SOUL_TORCH)) {
             entity.igniteForSeconds(4);
         }
+        if (attackingItemStack.is(Items.COPPER_TORCH)) {
+            entity.igniteForSeconds(4);
+        }
+        if (attackingItemStack.is(Items.REDSTONE_TORCH)) {
+            entity.igniteForSeconds(4);
+        }
     }
 }
